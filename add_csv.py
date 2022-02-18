@@ -11,8 +11,6 @@ DATABASE = 'booklist'
 conn = psycopg2.connect(host=HOST, database=DATABASE,
                         user=USER, password=PASSWORD)
 
-# import from csv
-
 
 def import_from_csv(table, columns, path):
     """
